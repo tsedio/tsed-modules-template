@@ -1,1 +1,5 @@
-console.log('Hello github package!')
+console.log("Hello github package!");
+
+export default {
+  version: require("../package.json").version
+};
