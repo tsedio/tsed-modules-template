@@ -83,8 +83,8 @@
     "registry": "https://npm.pkg.github.com"
   },
   "monorepo": {
-    "productionBranch": "main",
-    "developBranch": "main",
+    "productionBranch": "production",
+    "developBranch": "production",
     "npmAccess": "private"
   }
 }
