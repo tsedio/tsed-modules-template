@@ -53,7 +53,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --network-timeout 500000 --ignore-engines
       - name: Run test
-        run: yarn test:coverage && (yarn coveralls || true)
+        run: yarn test:coverage
 
   build:
     runs-on: ubuntu-latest

@@ -13,16 +13,19 @@
   },
   "homepage": "https://github.com/TypedProject/tsed-formio",
   "scripts": {
-    "postinstall": "lerna run build --stream",
     "configure": "monorepo ci configure",
-    "test": "lerna run test --stream",
+    "clean": "monorepo clean workspace",
+    "test": "yarn clean && yarn test:lint && yarn test:coverage",
+    "test:unit": "cross-env NODE_ENV=test mocha",
+    "test:coverage": "cross-env NODE_ENV=test nyc mocha",
+    "test:lint": "eslint packages --ext .ts",
+    "test:lint:fix": "eslint packages --ext .ts --fix",
     "test:e2e": "lerna run test:e2e",
-    "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix",
-    "prettier": "lerna run prettier",
     "build": "monorepo build",
     "publish": "monorepo publish --dry-run",
-    "release": "semantic-release"
+    "prettier": "prettier '{packages,test}/**/*.ts' --write",
+    "release": "semantic-release",
+    "release:dryRun": "semantic-release --dry-run"
   },
   "dependencies": {
     "lerna": "3.22.1"
