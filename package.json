@@ -79,6 +79,9 @@
   },
   "lint-staged": {
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "monorepo": {
     "productionBranch": "main",
     "developBranch": "main",
