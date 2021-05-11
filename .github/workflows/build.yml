@@ -33,16 +33,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [ 12.x, 14.x, 15.x ]
-        exclude:
-          - os: macos-latest
-            node-version: 12.x
-          - os: macos-latest
-            node-version: 15.x
-          - os: windows-latest
-            node-version: 12.x
-          - os: windows-latest
-            node-version: 15.x
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -76,7 +67,7 @@ jobs:
   deploy-packages:
     runs-on: ubuntu-latest
     needs: [lint, test, build]
-    if: ${{ github.event_name != 'pull_request' && (contains(github.ref, 'main') || contains(github.ref, 'alpha')  || contains(github.ref, 'beta') || contains(github.ref, 'rc')) }}
+    if: ${{ github.event_name != 'pull_request' && (contains(github.ref, 'main')) }}
 
     strategy:
       matrix:
@@ -94,7 +85,6 @@ jobs:
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn release
       - uses: actions/upload-artifact@v2
         with:

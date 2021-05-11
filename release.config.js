@@ -1,7 +1,5 @@
 module.exports = {
-  branches: [
-    "main"
-  ],
+  branches: "main",
   verifyConditions: ["@semantic-release/github", "@semantic-release/npm", "@tsed/monorepo-utils/semantic-release"],
   analyzeCommits: ["@semantic-release/commit-analyzer"],
   verifyRelease: [],

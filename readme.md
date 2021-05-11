@@ -2,6 +2,11 @@
  <a href="https://tsed.io" target="_blank"><img src="https://tsed.io/tsed-og.png" width="200" alt="Ts.ED logo"/></a>
 </p>
 
+[![Build & Release](https://github.com/tsed-preview/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsed-preview/tsed-preview/actions/workflows/build.yml)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![backers](https://opencollective.com/tsed/tiers/badge.svg)](https://opencollective.com/tsed)
+
 Welcome on Ts.ED repository preview. This repository is dedicated to sponsors and the member of the Ts.ED team.
 It allows sponsors to preview future features which will then be integrated into the Ts.ED frameworks in a standard release cycle.
 
