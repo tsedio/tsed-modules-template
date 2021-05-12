@@ -1,6 +1,6 @@
 {
   "name": "@tsed-preview/root",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "Romain Lenzotti",
   "private": true,
@@ -77,8 +77,7 @@
       "post-commit": "git update-index --again"
     }
   },
-  "lint-staged": {
-  },
+  "lint-staged": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
