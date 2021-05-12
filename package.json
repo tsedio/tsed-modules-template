@@ -6,12 +6,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/TypedProject/tsed-formio.git"
+    "url": "https://github.com/tsed-preview/tsed-preview.git"
   },
   "bugs": {
-    "url": "https://github.com/TypedProject/tsed-formio/issues"
+    "url": "https://github.com/tsed-preview/tsed-preview/issues"
   },
-  "homepage": "https://github.com/TypedProject/tsed-formio",
+  "homepage": "https://github.com/tsed-preview/tsed-preview",
   "scripts": {
     "configure": "monorepo ci configure",
     "clean": "monorepo clean workspace",
