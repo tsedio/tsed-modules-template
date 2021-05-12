@@ -83,7 +83,6 @@
   },
   "monorepo": {
     "productionBranch": "production",
-    "developBranch": "production",
-    "npmAccess": "private"
+    "developBranch": "production"
   }
 }
