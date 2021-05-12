@@ -31,6 +31,22 @@ If you use yarn (v1), you can also add a `.yarnrc` with the following content:
 "@tsed-preview:registry" "https://npm.pkg.github.com/tsed-preview"
 ```
 
+Then add the package to you package.json:
+
+```
+{
+  "name": "@project/server",
+  "version": "1.0.0",
+  "description": "A Server based on Ts.ED",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@tsed-preview/fake": "1.0.4"
+  }
+}
+```
+
 ## Contributors
 Please read [contributing guidelines here](./CONTRIBUTING.md).
 
