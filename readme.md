@@ -12,6 +12,25 @@ It allows sponsors to preview future features which will then be integrated into
 
 So thank your for help !!
 
+## Install a package from Github
+
+Ask Ts.ED team on slack to get an uniq personal GH_TOKEN.
+
+Then add on your project (or on profile level) a `.npmrc` file with the following content:
+
+```
+@tsed-preview:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=GH_TOKEN
+```
+
+Replace the `GH_TOKEN` by your token or by `${GH_TOKEN}` if you want to use env variable.
+
+If you use yarn (v1), you can also add a `.yarnrc` with the following content:
+
+```
+"@tsed-preview:registry" "https://npm.pkg.github.com/tsed-preview"
+```
+
 ## Contributors
 Please read [contributing guidelines here](./CONTRIBUTING.md).
 
