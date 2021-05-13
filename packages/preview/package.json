@@ -1,6 +1,6 @@
 {
   "name": "@tsedio/preview",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fake package to test github package deployment",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
