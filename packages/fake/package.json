@@ -1,5 +1,5 @@
 {
-  "name": "@tsed-preview/fake",
+  "name": "@tsedio/fake",
   "version": "1.0.6",
   "description": "Fake package to test github package deployment",
   "main": "./lib/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@tsed-preview/root",
+  "name": "@tsedio/root",
   "version": "1.0.6",
   "description": "",
   "author": "Romain Lenzotti",
@@ -83,6 +83,10 @@
   },
   "monorepo": {
     "productionBranch": "production",
-    "developBranch": "production"
+    "developBranch": "production",
+    "registries": [
+      "https://npm.pkg.github.com",
+      "https://registry.npmjs.org/"
+    ]
   }
 }
