@@ -2,7 +2,7 @@
  <a href="https://tsed.io" target="_blank"><img src="https://tsed.io/tsed-og.png" width="200" alt="Ts.ED logo"/></a>
 </p>
 
-[![Build & Release](https://github.com/tsed-preview/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsed-preview/tsed-preview/actions/workflows/build.yml)
+[![Build & Release](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![backers](https://opencollective.com/tsed/tiers/badge.svg)](https://opencollective.com/tsed)
@@ -19,7 +19,7 @@ Ask Ts.ED team on slack to get an uniq personal GH_TOKEN.
 Then add on your project (or on profile level) a `.npmrc` file with the following content:
 
 ```
-@tsed-preview:registry=https://npm.pkg.github.com
+@tsedio:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=GH_TOKEN
 ```
 
@@ -28,7 +28,7 @@ Replace the `GH_TOKEN` by your token or by `${GH_TOKEN}` if you want to use env 
 If you use yarn (v1), you can also add a `.yarnrc` with the following content:
 
 ```
-"@tsed-preview:registry" "https://npm.pkg.github.com/tsed-preview"
+"@tsedio:registry" "https://npm.pkg.github.com/tsedio"
 ```
 
 Then add the package to you package.json:
@@ -50,7 +50,7 @@ Then add the package to you package.json:
 ## Contributors
 Please read [contributing guidelines here](./CONTRIBUTING.md).
 
-<a href="https://github.com/TypedProject/tsed/graphs/contributors"><img src="https://opencollective.com/tsed/contributors.svg?width=890" /></a>
+<a href="https://github.com/tsedio/tsed/graphs/contributors"><img src="https://opencollective.com/tsed/contributors.svg?width=890" /></a>
 
 
 ## Backers
