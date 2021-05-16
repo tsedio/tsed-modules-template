@@ -20,8 +20,7 @@
     "newLine": "LF",
     "noEmit": true,
     "lib": [
-      "es7",
-      "dom",
+      "es2019",
       "esnext.asynciterable"
     ],
     "typeRoots": [
@@ -30,14 +29,10 @@
   },
   "linterOptions": {
     "exclude": [
-      "docs",
-      "integration",
-      "examples/**"
+      "docs"
     ]
   },
   "exclude": [
-    "docs",
-    "integration",
-    "examples/**"
+    "docs"
   ]
 }
