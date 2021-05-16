@@ -4,7 +4,7 @@
 
 <h1 class="text-align: center;" align="center">Ts.ED package example</h1>
 
-[![Build & Release](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml)
+[![Build & Release](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![backers](https://opencollective.com/tsed/tiers/badge.svg)](https://opencollective.com/tsed)
@@ -22,7 +22,7 @@ Ask Ts.ED team on slack to get an uniq personal GH_TOKEN.
 Then add on your project (or on profile level) a `.npmrc` file with the following content:
 
 ```
-@tsed-preview:registry=https://npm.pkg.github.com
+@tsed-modules-template:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=GH_TOKEN
 ```
 

@@ -6,12 +6,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/tsedio/tsed-preview.git"
+    "url": "https://github.com/tsedio/tsed-modules-template.git"
   },
   "bugs": {
-    "url": "https://github.com/tsedio/tsed-preview/issues"
+    "url": "https://github.com/tsedio/tsed-modules-template/issues"
   },
-  "homepage": "https://github.com/tsedio/tsed-preview",
+  "homepage": "https://github.com/tsedio/tsed-modules-template",
   "scripts": {
     "configure": "monorepo ci configure",
     "clean": "monorepo clean workspace",

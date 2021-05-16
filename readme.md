@@ -4,17 +4,63 @@
 
 <h1 class="text-align: center;" align="center">Ts.ED Workspaces example</h1>
 
-[![Build & Release](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml)
+[![Build & Release](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![backers](https://opencollective.com/tsed/tiers/badge.svg)](https://opencollective.com/tsed)
 
-Welcome on Ts.ED repository preview. This repository is dedicated to sponsors and the member of the Ts.ED team.
-It allows sponsors to preview future features which will then be integrated into the Ts.ED frameworks in a standard release cycle.
+Welcome on Ts.ED modules template. 
 
-So thank your for help !!
+Use this template to bootstrap a repository configured with GithubAction to deploy NPM modules on Github packages and/or NPM
+registry. 
 
-## Install a package from Github
+This template use [Ts.ED MonoRepoUtils](https://github.com/tsedio/tsed-monorepo-utils) to package modules inside the `packages` directory.
+
+## Configuration
+### Repository
+
+Replace the follow `tsed-preview` text by your repository name.
+
+### Create package
+
+You have a simple package example in `packages/preview`. Rename it or copy this package example.
+
+Then edit the `package.json` and replace the package name by your desired package name.
+
+### Registries configuration
+
+Inside the root `package.json` change the registries:
+
+```json
+{
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "monorepo": {
+    "productionBranch": "production",
+    "developBranch": "production",
+    "registries": [
+      "https://registry.npmjs.org/"
+    ]
+  }
+}
+```
+
+To deploy on NPM, configure the `NPM_TOKEN` env variable in your Github secret:
+
+See GitHub Action configuration [here](https://github.com/tsedio/tsed-modules-template/blob/production/.github/workflows/build.yml#L75):
+
+```yaml
+  - name: Release packages
+    env:
+      CI: true
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+```
+
+
+
+## Install a package from GitHub
 
 Ask Ts.ED team on slack to get an uniq personal GH_TOKEN.
 
