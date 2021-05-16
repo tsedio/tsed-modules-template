@@ -15,7 +15,7 @@
   "scripts": {
     "configure": "monorepo ci configure",
     "clean": "monorepo clean workspace",
-    "test": "yarn test:lint && yarn test:coverage",
+    "test": "yarn clean && yarn test:lint && yarn test:coverage",
     "test:unit": "lerna run test:unit",
     "test:coverage": "lerna run test:coverage",
     "test:lint": "eslint packages --ext .ts",
@@ -28,7 +28,7 @@
     "release:dryRun": "semantic-release --dry-run"
   },
   "dependencies": {
-    "lerna": "3.22.1"
+    "lerna": "4.0.0"
   },
   "devDependencies": {
     "@tsed/monorepo-utils": "1.17.6",
