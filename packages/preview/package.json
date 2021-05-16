@@ -5,7 +5,10 @@
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "build": "tsc --build tsconfig.compile.json"
+    "build": "tsc --build tsconfig.compile.json",
+    "test": "yarn test:lint && yarn test:coverage",
+    "test:unit": "cross-env NODE_ENV=test jest",
+    "test:coverage": "yarn test:unit"
   },
   "private": false,
   "dependencies": {},

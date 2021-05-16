@@ -1,6 +1,8 @@
-<p style="text-align: center" align="center">
- <a href="https://tsed.io" target="_blank"><img src="https://tsed.io/tsed-og.png" width="200" alt="Ts.ED logo"/></a>
-</p>
+<div style="text-align: center;" align="center">
+ <a href="https://tsed.io" target="_blank"><img src="https://tsed.io/tsed-og.png" width="200" alt="Ts.ED logo"/></a><br />
+</div>
+
+<h1 class="text-align: center;" align="center">Ts.ED Workspaces example</h1>
 
 [![Build & Release](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-preview/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -42,7 +44,7 @@ Then add the package to you package.json:
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tsed-preview/fake": "1.0.4"
+    "@tsedio/preview": "1.0.4"
   }
 }
 ```
@@ -75,6 +77,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[travis]: https://travis-ci.org/
 
