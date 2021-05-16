@@ -2,7 +2,7 @@
  <a href="https://tsed.io" target="_blank"><img src="https://tsed.io/tsed-og.png" width="200" alt="Ts.ED logo"/></a><br />
 </div>
 
-<h1 class="text-align: center;" align="center">Ts.ED Workspaces example</h1>
+<h1 class="text-align: center;" align="center">Ts.ED modules template</h1>
 
 [![Build & Release](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml/badge.svg)](https://github.com/tsedio/tsed-modules-template/actions/workflows/build.yml)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
